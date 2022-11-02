@@ -1,0 +1,47 @@
+<div th:replace="compartilhado/header"></div>
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Novo Administrador</h1>
+    <p class="mb-4">Cadastrar um novo administrador<a target="_blank" href="https://datatables.net">official DataTables
+            documentation</a>.</p>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4" style="padding: 30px;">
+        <form method="post" action="/administradores/criar" onsubmit="return confirm('Deseja prosseguir?')">
+
+            <!-- <fieldset aria-required="true"> -->
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="form-control" required   id="nome" name="nome" aria-describedby="ajudaNome"
+                        placeholder="Digite seu nome, EX: João da Silva">
+                    <small id="ajudaNome" class="form-text text-muted">informe o seu nome completo</small>
+                </div>
+              <!-- </fieldset> -->
+              <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" class="form-control" required   id="email" name="email" aria-describedby="ajudaEmail"
+                        placeholder="Digite seu E-mail, EX: joao@email.com">
+                    <small id="ajudaEmail" class="form-text text-muted">informe o seu melhor E-mail</small>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" required   id="senha" name="senha"aria-describedby="ajudaSenha">
+                    <small id="ajudaSenha" class="form-text text-muted">Nunca informe sua senha para ninguem</small>
+                </div>
+            <div class="form-group">
+                <label for="observacao">Observações</label>
+                <textarea class="form-control" id="observacao" name="observacao" placeholder="Digite suas observações"></textarea>
+            </div>
+            <!-- <input type="submit" class="btn btn-primary" value="Submit"> -->,
+            <button type="submit" class="btn btn-primary" > Submit </button>
+        </form>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+<!-- </div> -->
+<!-- End of Main Content -->
+<div th:replace="compartilhado/footer"></div>
