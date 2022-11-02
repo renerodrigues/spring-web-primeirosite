@@ -61,7 +61,6 @@ public class AdministradoresController {
             // model.addAttribute("administrador", admin.get());
             Optional<Administrador> admin = repo.findById(id);
             model.addAttribute("administrador", admin.get());
-
         } catch (Exception ex) {
             return "redirect:/administradores";
         }
