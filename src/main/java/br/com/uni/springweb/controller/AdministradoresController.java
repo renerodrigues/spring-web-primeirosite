@@ -35,7 +35,7 @@ public class AdministradoresController {
 
     @GetMapping("/administradores/novo")
     public String novo() {
-
+        
         // List<Administrador> administradores = (List<Administrador>) repo.findAll();
         // model.addAttribute("administradores", administradores);
         return "administradores/novo";
