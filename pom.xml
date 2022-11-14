@@ -16,7 +16,7 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
-	
+		<start-class>br.com.uni.springweb.SpringwebApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -55,7 +55,9 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
+				<configuration>    
+					<mainClass>br.com.uni.springweb.SpringwebApplication</mainClass>
+				</configuration></plugin>
 		</plugins>
 	</build>
 
